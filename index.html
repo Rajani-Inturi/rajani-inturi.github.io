@@ -12,17 +12,20 @@
             height: 100vh;
             margin: 0;
             background-color: #f9f9f9;
+            overflow: hidden; /* Prevents scrolling if needed */
         }
         img {
             max-width: 100%;
-            height: auto;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-height: 100%;
+            object-fit: contain; /* Ensures the image scales without being cropped */
             border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
-    <img src="Resume_Jan25.png" alt="Resume of Your Name">
+    <img src="Resume_Jan.png" alt="Resume of Your Name">
 </body>
 </html>
+
 
